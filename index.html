@@ -14,24 +14,27 @@
         Hello! My name is <span>Sema Nur Altintas</span> I'm a Web Developer
       </h1>
       <br />
-      <a href="https://github.com/semanuraltintas">Find out more</a>
+      <a class="button" href="#about">Find out more</a>
     </header>
     <main>
-      <section class="about">
+      <section class="about" id="about">
         <h2>About Me</h2>
-        <div>
+        <div class="about-container">
           <img
             src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
             alt=""
             width="300"
+            class="about-img"
           />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-            praesentium molestiae, deserunt sapiente perferendis perspiciatis
-            corrupti quod modi doloremque impedit, sit enim eum nobis
-            consequuntur officiis asperiores aut eveniet ratione!
-          </p>
-          <a href="">My resume</a>
+          <div class="about-text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              praesentium molestiae, deserunt sapiente perferendis perspiciatis
+              corrupti quod modi doloremque impedit, sit enim eum nobis
+              consequuntur officiis asperiores aut eveniet ratione!
+            </p>
+            <a href="">My resume</a>
+          </div>
         </div>
         <blockquote>
           "Learn from yesterday, live for today, hope for tomorrow."
@@ -108,10 +111,22 @@
     </main>
     <footer>
       <ul>
-        <li><a href="">GitHub</a></li>
-        <li><a href="">GitHub</a></li>
-        <li><a href="">GitHub</a></li>
-        <li><a href="">GitHub</a></li>
+        <li>
+          <a
+            class="social-link linkedin"
+            href="https://www.linkedin.com/in/semanuraltintas/"
+            >Linkedin</a
+          >
+        </li>
+        <li>
+          <a
+            class="social-link github"
+            href="https://github.com/semanuraltintas"
+            >GitHub</a
+          >
+        </li>
+        <li><a class="social-link twitter" href="">Twitter</a></li>
+        <li><a class="social-link youtube" href="">Youtube</a></li>
       </ul>
       <p>@2022 - Portfolio Design by Maria Albertina</p>
     </footer>

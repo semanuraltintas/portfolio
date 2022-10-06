@@ -1,3 +1,7 @@
+:root {
+  --primary: red;
+  --spacing: 4rem;
+}
 * {
   box-sizing: border-box;
 }
@@ -14,5 +18,96 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 2rem;
   height: 100vh;
+}
+
+h1 {
+  font-size: 5vw;
+  line-height: 1.4em;
+  /* base font size: 16px */
+  margin-bottom: 2rem;
+}
+
+/* id 
+#about {
+}
+*/
+
+h2 {
+  text-align: center;
+  font-size: 3vw;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+
+p {
+  line-height: 1.4em;
+  /*0.4 bigger than 100% which is 16px */
+}
+
+/* class */
+.button {
+  color: var(--primary);
+  font-weight: bold;
+  border: 2px solid var(--primary);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.button:hover {
+  color: white;
+  background-color: var(--primary);
+}
+
+.about {
+  background-color: var(--primary);
+  color: white;
+  padding: var(--spacing);
+}
+
+.about-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+  .about-container {
+    display: flex;
+  }
+  .about-text {
+    margin-left: var(--spacing);
+  }
+}
+
+.about-img {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto var(--spacing);
+}
+
+.social-link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  font-size: 0px;
+  background: no-repeat;
+  background-size: 30px;
+}
+
+.twitter {
+  background-image: url(../images/icon-twitter.png);
+}
+
+.github {
+  background-image: url(../images/icon-github.png);
+}
+
+.linkedin {
+  background-image: url(../images/icon-linkedin.png);
+}
+
+.youtube {
+  background-image: url(../images/icon-youtube.png);
 }
