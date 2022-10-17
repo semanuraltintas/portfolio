@@ -4,129 +4,172 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sema Nur Portfolio</title>
+
+    <!-- CSS only -->
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+
+    <title>Sema Nur Portfolio</title>
   </head>
   <body>
-    <header>
-      <h1>
-        Hello! My name is <span>Sema Nur Altintas</span> I'm a Web Developer
-      </h1>
-      <br />
-      <a class="button" href="#about">Find out more</a>
+    <header class="header">
+      <div class="header-content">
+        <h1 class="header-title">
+          Hello, my name is <span>Sema Nur Altintas </span><br />A Frontend
+          Developer
+        </h1>
+        <a href="#about" class="button button-primary button-medium"
+          >Find out more</a
+        >
+      </div>
     </header>
     <main>
       <section class="about" id="about">
-        <h2>About Me</h2>
-        <div class="about-container">
+        <h2>About me</h2>
+
+        <div class="about-content">
           <img
             src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-            alt=""
-            width="300"
+            alt="developer"
             class="about-img"
           />
-          <div class="about-text">
+          <div class="about-description">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-              praesentium molestiae, deserunt sapiente perferendis perspiciatis
-              corrupti quod modi doloremque impedit, sit enim eum nobis
-              consequuntur officiis asperiores aut eveniet ratione!
+              I am a web developer who was formerly biologist. I'm living in
+              Turkey. I’m building websites with JavaScript, CSS, HTML. I’m
+              Front-End Foxes Bootcamp participator.
             </p>
-            <a href="">My resume</a>
+            <p>Projects I built while learning web development.</p>
+            <a
+              href="https://semanuraltintas.github.io/portfolio/"
+              class="button button-secondary"
+              >View resume</a
+            >
           </div>
         </div>
-        <blockquote>
-          "Learn from yesterday, live for today, hope for tomorrow."
-        </blockquote>
-        <cite>Tom Jonas</cite>
+        <div class="about-quote">
+          <blockquote>Dont comment bad code - rewrite it</blockquote>
+          <cite>Maggie Kaplan</cite>
+        </div>
       </section>
       <section class="projects">
         <h2>Projects</h2>
-        <article>
-          <h3>Project Title</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-            maiores nihil soluta ad at laborum error, quas quaerat quis!
-            Perferendis facilis pariatur libero quas neque magnam quisquam optio
-            quasi itaque
-          </p>
-          <a href="https://github.com/semanuraltintas/50projects50days"
-            >Source Code</a
-          >
-          <a href="">View Project</a>
+        <article class="projects-article">
+          <div>
+            <h3>50 Projects 50 Days</h3>
+            <p>
+              This repo built from Brad Traversy 50 Projects in 50 Days -
+              HTML/CSS and JavaScript Course.
+            </p>
+            <a
+              href="https://github.com/semanuraltintas/50projects50days"
+              class="button button-primary"
+              >Source Code</a
+            >
+            <a
+              href="https://github.com/semanuraltintas/50projects50days"
+              class="button button-tertiary"
+              >View Project</a
+            >
+          </div>
+          <br />
           <img
-            src="https://images.unsplash.com/photo-1599837565318-67429bde7162?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            class="projects-img"
+            src="https://images.unsplash.com/photo-1545670723-196ed0954986?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80"
             alt="project"
-            width="300"
           />
         </article>
-        <article>
-          <h3>Project Title</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-            maiores nihil soluta ad at laborum error, quas quaerat quis!
-            Perferendis facilis pariatur libero quas neque magnam quisquam optio
-            quasi itaque
-          </p>
-          <a href="https://github.com/semanuraltintas/50projects50days"
-            >Source Code</a
-          >
-          <a href="">View Project</a>
+        <article class="projects-article">
+          <div>
+            <h3>Javascript Games</h3>
+            <p>
+              This repo built FreeCodeCamp - Learn JavaScript by Building 7
+              Games - Full Course.
+            </p>
+            <a
+              href="https://github.com/semanuraltintas/javascript-games"
+              class="button button-primary"
+              >Source Code</a
+            >
+            <a
+              href="https://github.com/semanuraltintas/javascript-games"
+              class="button button-tertiary"
+              >View Project</a
+            >
+          </div>
+          <br />
           <img
-            src="https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+            class="projects-img"
+            src="https://images.unsplash.com/photo-1545670723-196ed0954986?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80"
             alt="project"
-            width="300"
           />
         </article>
-        <article>
-          <h3>Project Title</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-            maiores nihil soluta ad at laborum error, quas quaerat quis!
-            Perferendis facilis pariatur libero quas neque magnam quisquam optio
-            quasi itaque
-          </p>
-          <a href="https://github.com/semanuraltintas/javascript-games"
-            >Source Code</a
-          >
-          <a href="">View Project</a>
+        <article class="projects-article">
+          <div>
+            <h3>Terrarium - Frontend Foxes Bootcamp Practices</h3>
+            <p>
+              A small drag and drop code-meditation. With a little HTML, JS and
+              CSS, you can build a web interface, style it, and add an
+              interaction.
+            </p>
+            <a
+              href="https://github.com/semanuraltintas/terrarium-fef"
+              class="button button-primary"
+              >Source Code</a
+            >
+            <a
+              href="https://semanuraltintas.github.io/terrarium-fef/terrarium-project/"
+              class="button button-tertiary"
+              >View Project</a
+            >
+          </div>
+          <br />
           <img
-            src="https://images.unsplash.com/photo-1509966756634-9c23dd6e6815?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80"
+            class="projects-img"
+            src="https://images.unsplash.com/photo-1545670723-196ed0954986?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80"
             alt="project"
-            width="300"
           />
         </article>
       </section>
       <section class="contact">
         <h2>Contact</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
-          commodi laboriosam fugiat in labore, nobis officiis aut fuga rem
-          architecto porro numquam vero minus quas ipsa voluptatem dignissimos
-          aliquam magni.
-        </p>
-        <a href="mailto:altintassema@gmail.com">Let's talk</a>
+        <div class="contact-content">
+          <p>
+            Feel free to contact me by email or social media and we will be usre
+            to get back to you as soon as possible.
+          </p>
+          <a class="button button-secondary" href="mailto:semaaaaa@gmail.com"
+            >Let's talk</a
+          >
+        </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <ul>
-        <li>
+        <li class="social-item">
           <a
-            class="social-link linkedin"
-            href="https://www.linkedin.com/in/semanuraltintas/"
-            >Linkedin</a
-          >
-        </li>
-        <li>
-          <a
-            class="social-link github"
             href="https://github.com/semanuraltintas"
-            >GitHub</a
-          >
+            class="social-link github"
+          ></a>
         </li>
-        <li><a class="social-link twitter" href="">Twitter</a></li>
-        <li><a class="social-link youtube" href="">Youtube</a></li>
+        <li class="social-item">
+          <a
+            href="https://www.linkedin.com/in/semanuraltintas/"
+            class="social-link linkedin"
+          ></a>
+        </li>
+        <li class="social-item">
+          <a
+            href="https://github.com/semanuraltintas"
+            class="social-link youtube"
+          ></a>
+        </li>
+        <li class="social-item">
+          <a
+            href="https://github.com/semanuraltintas"
+            class="social-link twitter"
+          ></a>
+        </li>
       </ul>
       <p>@2022 - Portfolio Design by Maria Albertina</p>
     </footer>
