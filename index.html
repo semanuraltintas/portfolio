@@ -1,177 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="icons8-geography-96.png" />
 
-    <!-- CSS only -->
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <title>My Front-end Developer Portfolio</title>
 
-    <title>Sema Nur Portfolio</title>
+    <!-- meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://github.com/semanuraltintas/portfolio" />
+    <meta name="description" content="My Developer Portfolio" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="AtomicFox Portfolio" />
+    <meta property="og:type" content="article" />
+    <!-- <meta property="og:url" content="your url here" /> -->
+    <meta property="og:description" content="My Developer Portfolio" />
+
+    <!-- import bootstrap library-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- import font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./styles/component.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
   </head>
-  <body>
-    <header class="header">
-      <div class="header-content">
-        <h1 class="header-title">
-          Hello, my name is <span>Sema Nur Altintas </span><br />A Frontend
-          Developer
-        </h1>
-        <a href="#about" class="button button-primary button-medium"
-          >Find out more</a
-        >
-      </div>
-    </header>
-    <main>
-      <section class="about" id="about">
-        <h2>About me</h2>
 
-        <div class="about-content">
-          <img
-            src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-            alt="developer"
-            class="about-img"
-          />
-          <div class="about-description">
+  <body>
+    <div class="header-content">
+      <div class="header-logo">
+        <img src="icons8-fox-64.png" alt="Logo Image" />
+      </div>
+      <div class="d-flex align-items-center">
+        <nav class="header-navigation">
+          <ul class="header-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+        <button class="button button-secondary-rounded" id="change-theme">
+          Change theme
+        </button>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="container" role="main">
+        <section class="row intro">
+          <div class="col-xs-12 col-sm-12 col-md-6">
+            <h1 class="title">Hello, my name is Sema Nur Altintas</h1>
             <p>
-              I am a web developer who was formerly biologist. I'm living in
-              Turkey. I’m building websites with JavaScript, CSS, HTML. I’m
-              Front-End Foxes Bootcamp participator.
+              I'm a
+              <span> Front-end developer </span>
+              who was formerly biologist. I'm living in Turkey. I’m building
+              websites with JavaScript, CSS, HTML. I’m Front-End Foxes Bootcamp
+              participator.
             </p>
-            <p>Projects I built while learning web development.</p>
             <a
-              href="https://semanuraltintas.github.io/portfolio/"
+              href="https://github.com/semanuraltintas"
+              class="button button-primary"
+            >
+              Github
+            </a>
+            <a
+              href="https://www.linkedin.com/in/semanuraltintas/"
               class="button button-secondary"
-              >View resume</a
             >
+              LinkedIn
+            </a>
           </div>
-        </div>
-        <div class="about-quote">
-          <blockquote>Dont comment bad code - rewrite it</blockquote>
-          <cite>Maggie Kaplan</cite>
-        </div>
-      </section>
-      <section class="projects">
-        <h2>Projects</h2>
-        <article class="projects-article">
-          <div>
-            <h3>50 Projects 50 Days</h3>
-            <p>
-              This repo built from Brad Traversy 50 Projects in 50 Days -
-              HTML/CSS and JavaScript Course.
+          <div class="col-sm-12 col-md-6">
+            <img
+              src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              alt=" developer woman sitting at a computer"
+              class="intro-img"
+            />
+          </div>
+        </section>
+        <!-- About -->
+        <section class="row about" id="about">
+          <div class="col-12">
+            <h2 class="heading">About me</h2>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <div class="about-img">
+              <img
+                src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-6 d-flex align-items-center flex-column">
+            <p class="about-text">
+              Nisl arcu, scelerisque neque ut. Tincidunt amet, tempor duis
+              tortor neque auctor dis ipsum. Pretium cras amet odio amet
+              eleifend id sed cras sed. Aliquet risus posuere aliquet imperdiet
+              sit.
             </p>
-            <a
-              href="https://github.com/semanuraltintas/50projects50days"
-              class="button button-primary"
-              >Source Code</a
-            >
-            <a
-              href="https://github.com/semanuraltintas/50projects50days"
-              class="button button-tertiary"
-              >View Project</a
-            >
+            <div class="text-center" id="motivato"></div>
+            <br />
+            <button class="button button-secondary" onclick="motivateMe()">
+              Next quote
+            </button>
           </div>
-          <br />
-          <img
-            class="projects-img"
-            src="https://images.unsplash.com/photo-1545670723-196ed0954986?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80"
-            alt="project"
-          />
-        </article>
-        <article class="projects-article">
-          <div>
-            <h3>Javascript Games</h3>
-            <p>
-              This repo built FreeCodeCamp - Learn JavaScript by Building 7
-              Games - Full Course.
-            </p>
-            <a
-              href="https://github.com/semanuraltintas/javascript-games"
-              class="button button-primary"
-              >Source Code</a
-            >
-            <a
-              href="https://github.com/semanuraltintas/javascript-games"
-              class="button button-tertiary"
-              >View Project</a
-            >
+        </section>
+        <!-- Projects -->
+        <section class="projects" id="projects">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="heading">Projects</h2>
+            </div>
           </div>
-          <br />
-          <img
-            class="projects-img"
-            src="https://images.unsplash.com/photo-1545670723-196ed0954986?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80"
-            alt="project"
-          />
-        </article>
-        <article class="projects-article">
-          <div>
-            <h3>Terrarium - Frontend Foxes Bootcamp Practices</h3>
-            <p>
-              A small drag and drop code-meditation. With a little HTML, JS and
-              CSS, you can build a web interface, style it, and add an
-              interaction.
-            </p>
-            <a
-              href="https://github.com/semanuraltintas/terrarium-fef"
-              class="button button-primary"
-              >Source Code</a
-            >
-            <a
-              href="https://semanuraltintas.github.io/terrarium-fef/terrarium-project/"
-              class="button button-tertiary"
-              >View Project</a
-            >
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+              <div class="project-card">
+                <div class="project-card-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                  />
+                </div>
+                <div class="project-card-content">
+                  <h3 class="project-card-title">Javascript Games</h3>
+                  <p class="project-card-text">
+                    This repo built FreeCodeCamp - Learn JavaScript by Building
+                    7 Games - Full Course.
+                  </p>
+                  <a
+                    class="button button-secondary-rounded"
+                    href="https://github.com/semanuraltintas/javascript-games"
+                  >
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+              <div class="project-card">
+                <div class="project-card-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1638909067462-1310c4011610?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                  />
+                </div>
+                <div class="project-card-content">
+                  <h3 class="project-card-title">50 Projects 50 Days</h3>
+                  <p class="project-card-text">
+                    his repo built from Brad Traversy 50 Projects in 50 Days -
+                    HTML/CSS and JavaScript Course.
+                  </p>
+                  <a
+                    class="button button-secondary-rounded"
+                    href="https://github.com/semanuraltintas/50projects50days"
+                  >
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+              <div class="project-card">
+                <div class="project-card-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=455&q=80"
+                  />
+                </div>
+                <div class="project-card-content">
+                  <h3 class="project-card-title">
+                    Terrarium - Frontend Foxes Bootcamp Practices
+                  </h3>
+                  <p class="project-card-text">
+                    A small drag and drop code-meditation. With a little HTML,
+                    JS and CSS, you can build a web interface, style it, and add
+                    an interaction.
+                  </p>
+                  <a
+                    class="button button-secondary-rounded"
+                    href="https://github.com/semanuraltintas/terrarium-fef"
+                  >
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <br />
-          <img
-            class="projects-img"
-            src="https://images.unsplash.com/photo-1545670723-196ed0954986?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80"
-            alt="project"
-          />
-        </article>
-      </section>
-      <section class="contact">
-        <h2>Contact</h2>
-        <div class="contact-content">
-          <p>
-            Feel free to contact me by email or social media and we will be usre
-            to get back to you as soon as possible.
-          </p>
-          <a class="button button-secondary" href="mailto:semaaaaa@gmail.com"
-            >Let's talk</a
-          >
-        </div>
-      </section>
-    </main>
+        </section>
+        <section class="contacts" id="contacts">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="heading">Contacts</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-8 offset-md-2">
+              <form action="mailto:noordev" method="post">
+                <div class="form-group">
+                  <label for="inputName">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputName"
+                    placeholder="Enter your name"
+                    name="name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    placeholder="Enter email"
+                    name="email"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                    name="text"
+                  ></textarea>
+                </div>
+                <div class="text-right">
+                  <button type="submit" class="button button-primary">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- footer -->
     <footer class="footer">
-      <ul>
-        <li class="social-item">
-          <a
-            href="https://github.com/semanuraltintas"
-            class="social-link github"
-          ></a>
-        </li>
-        <li class="social-item">
-          <a
-            href="https://www.linkedin.com/in/semanuraltintas/"
-            class="social-link linkedin"
-          ></a>
-        </li>
-        <li class="social-item">
-          <a
-            href="https://github.com/semanuraltintas"
-            class="social-link youtube"
-          ></a>
-        </li>
-        <li class="social-item">
-          <a
-            href="https://github.com/semanuraltintas"
-            class="social-link twitter"
-          ></a>
-        </li>
-      </ul>
-      <p>@2022 - Portfolio Design by Maria Albertina</p>
+      <div class="text-center">
+        <a href="https://github.com/semanuraltintas" class="social github"></a>
+        <a
+          href="https://www.linkedin.com/in/semanuraltintas/"
+          class="social linkedin"
+        ></a>
+      </div>
     </footer>
   </body>
 </html>
